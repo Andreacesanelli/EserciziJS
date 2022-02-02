@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Corso JavaScript</title>
+        <style>
+        </style>
+    </head>
+    <body>
+        <h1>Messaggio scorrevole</h1>
+        <table>
+          <tbody>
+            <tr>
+              <td id="c1"></td>  
+              <td id="c2"></td>  
+              <td id="c3"></td>  
+              <td id="c4"></td>  
+              <td id="c5"></td>  
+              <td id="c6"></td>  
+              <td id="c7"></td>  
+              <td id="c8"></td>  
+              <td id="c9"></td>  
+              <td id="c10"></td>  
+              <td id="c11"></td>  
+              <td id="c12"></td>  
+              <td id="c13"></td>  
+              <td id="c14"></td>  
+              <td id="c15"></td>  
+              <td id="c16"></td>  
+            </tr>    
+          </tbody>    
+        </table>    
+        <script>
+            let banner = [];
+            for (k=0; k<16; k++) {
+                z=k+1;
+                h="#c"+z;               
+                banner[k]=document.querySelector(h);               
+            }
+
+                              /* 1234567890123456 */ 
+            let messaggio = [..."viva JavaScript "]
+            let i = 100000;
+            function mostraMessaggio() {
+                for(let [j, lettera] of messaggio.entries()) { 
+                   banner[(i+j)%16].textContent = lettera
+                }
+                i--
+            }
+            mostraMessaggio();
+            setInterval(mostraMessaggio, 1000);
+        </script>
+    </body>        
+</html>
