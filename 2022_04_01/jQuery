@@ -1,13 +1,15 @@
 
-
 <!doctype html>
 <xhtml lang='it'>
-
-<head>
-	<meta charset="utf-8">
-	<title>Introduczione a jQuery</title>
-	<script src="https://code.jquery.com/jquery-3.6.0.js"></script> 
-</head>
+	<head>
+		<meta charset="utf-8">
+		<title>Introduczione a jQuery</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script> 
+		<script defer src="esercizi1.js"></script>
+		<style type="text/css">
+   	 	.wrapp {  background-color: yellow; }
+   	 	</style>
+	</head>
 	<body>
 		<h1>Introduzione a jQuery h1</h1>
 		<h2>Introduzione a jQuery h2</h2>
@@ -16,11 +18,15 @@
 		<p>Introduzione a jQuery</p>
 		<p class="speciale">paragrado 2 con classe speciale</p>
 		<p class="benvenuto">Benvenuto in questa introduzione (con riquadro)</p>
-		<script>
-			$('.speciale').css('background-color','blue')	
-			$('h4 , .benvenuto').css('border-style','solid')
-		</script>
+		<p>paragrado liscio senza ghiaccio</p>
+
+<form action="page.php">
+  <label for="fname">nome:</label>
+  <input type="text" id="dato1" name="N1"><br><br>
+  <label for="lname">cognome:</label>
+  <input type="text" id="dato2" name="N2"><br><br>
+  <input type="submit" value="INVIA">
+</form>
+		
 	</body>
-
-
 </html>
