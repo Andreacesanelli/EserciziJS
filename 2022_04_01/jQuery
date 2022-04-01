@@ -1,0 +1,24 @@
+
+
+<!doctype html>
+<xhtml lang='it'>
+
+<head>
+	<meta charset="utf-8">
+	<title>Introduczione a jQuery</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script> 
+</head>
+	<body>
+		<h1>Introduzione a jQuery h1</h1>
+		<h2>Introduzione a jQuery h2</h2>
+		<h3>Introduzione a jQuery h3</h3>
+		<p>Introduzione a jQuery</p>
+		<p class="benvenuto">Benvenuto in questa introduzione</p>
+		<script>
+			$('.benvenuto').css('font-weight','bold')	
+			$("h3","p").css('font-weight','bold')
+		</script>
+	</body>
+
+
+</html>
