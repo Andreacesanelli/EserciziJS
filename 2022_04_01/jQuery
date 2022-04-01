@@ -12,11 +12,13 @@
 		<h1>Introduzione a jQuery h1</h1>
 		<h2>Introduzione a jQuery h2</h2>
 		<h3>Introduzione a jQuery h3</h3>
+		<h4>Introduzione a jQuery h4 con riquadro</h4>
 		<p>Introduzione a jQuery</p>
-		<p class="benvenuto">Benvenuto in questa introduzione</p>
+		<p class="speciale">paragrado 2 con classe speciale</p>
+		<p class="benvenuto">Benvenuto in questa introduzione (con riquadro)</p>
 		<script>
-			$('.benvenuto').css('font-weight','bold')	
-			$("h3","p").css('font-weight','bold')
+			$('.speciale').css('background-color','blue')	
+			$('h4 , .benvenuto').css('border-style','solid')
 		</script>
 	</body>
 
